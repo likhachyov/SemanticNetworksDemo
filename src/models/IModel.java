@@ -1,5 +1,6 @@
 package models;
 
+import utils.ModelDragListener;
 import utils.ScreenConverter;
 import utils.Vector2;
 
@@ -16,4 +17,8 @@ public interface IModel {
     void setFocused(boolean focused);
 
     void moveOn(Vector2 v);
+
+    void addText(String str);
+
+    void addDragListener(ModelDragListener listener);
 }

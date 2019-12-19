@@ -15,4 +15,9 @@ public class ScreenPoint {
     public int getJ() {
         return j;
     }
+
+    @Override
+    public String toString() {
+        return "X " + i + " Y " + j;
+    }
 }

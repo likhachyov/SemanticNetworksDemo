@@ -14,9 +14,9 @@ public class Main {
         drawPanel.setPreferredSize(new Dimension(650, 700));
         mainFrame.add(drawPanel, BorderLayout.CENTER);
 
-        MenuPanel menuPanel = new MenuPanel();
+        MenuPanel menuPanel = new MenuPanel(drawPanel);
         menuPanel.setPreferredSize(new Dimension(150, 700));
-        mainFrame.add(menuPanel, BorderLayout.EAST);
+        mainFrame.add(menuPanel, BorderLayout.WEST);
 
         mainFrame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         mainFrame.setLocationRelativeTo(null);
